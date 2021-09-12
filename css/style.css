@@ -40,7 +40,7 @@ body {
   transition: 0.6s;
   margin: 10px;
 }
-.single-product:hover {
+.single-product{
   box-shadow: 4px 4px 7px rgba(39, 103, 223, 0.616);
   border-radius: 10px;
   border: 1px solid rgba(106, 152, 221, 0.911);
