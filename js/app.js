@@ -16,8 +16,8 @@ const showProducts = (products) => {
     <hr>
       </div>
       <h3>${product.title}</h3>
-      <h5>Rating:${product.rating.rate}</h5>
-      <h5>Total Rate:${product.rating.count}</h5>
+      <h5>Rating: <span style="color: brown;">${product.rating.rate}</span></h5>
+      <h5>Total Rate: <span style="color: forestgreen;">${product.rating.count}</span></h5>
       <p>Category: ${product.category}</p>
       <h2>Price: $ ${product.price}</h2>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn" style="background-color: rgb(110, 173, 231);" >add to cart</button>
