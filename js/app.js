@@ -3,7 +3,6 @@ const loadProducts = () => {
   showProducts(data);
 };
 
-
 // show all product in UI 
 const showProducts = (products) => {
   const allProducts = products.map((pd) => pd);
@@ -14,6 +13,7 @@ const showProducts = (products) => {
     div.innerHTML = `<div class="single-product">
       <div>
     <img class="product-image" src=${image}></img>
+    <hr>
       </div>
       <h3>${product.title}</h3>
       <h5>Rating:${product.rating.rate}</h5>
