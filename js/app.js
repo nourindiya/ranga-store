@@ -10,7 +10,7 @@ const showProducts = (products) => {
     const image = product.image;
     const div = document.createElement("div");
     div.classList.add("product");
-    div.innerHTML = `<div class="single-product">
+    div.innerHTML = `<div class="single-product ">
       <div>
     <img class="product-image" src=${image}></img>
     <hr>
@@ -20,8 +20,8 @@ const showProducts = (products) => {
       <h5>Total Rate: <span style="color: forestgreen;">${product.rating.count}</span></h5>
       <p>Category: ${product.category}</p>
       <h2>Price: $ ${product.price}</h2>
-      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn" style="background-color: rgb(110, 173, 231);" >add to cart</button>
-      <button id="details-btn" class="btn btn-info">Details</button></div>
+      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn  border-dark" style="background-color: rgb(110, 173, 231);" >Add to cart</button>
+      <button id="details-btn" class="btn btn-info  border-dark">Details</button></div>
       `;
     document.getElementById("all-products").appendChild(div);
   }
